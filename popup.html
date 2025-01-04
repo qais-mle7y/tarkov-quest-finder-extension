@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tarkov Quest Finder</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body class="bg-gray-900 text-white p-6">
+  <div class="container mx-auto max-w-4xl">
+    <h1 class="text-3xl font-bold text-center mb-6">Tarkov Quest Finder</h1>
+    <div class="flex gap-2 mb-4">
+      <input
+        type="text"
+        id="search"
+        placeholder="Search for a task..."
+        class="w-full p-3 border border-gray-700 rounded-lg bg-gray-800 text-white focus:outline-none focus:border-blue-500"
+      />
+      <button
+        id="searchButton"
+        class="p-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 focus:outline-none"
+      >
+        Search
+      </button>
+    </div>
+    <div class="grid grid-cols-2 gap-4 mb-6">
+      <select id="factionFilter" class="p-2 border border-gray-700 rounded-lg bg-gray-800 text-white focus:outline-none focus:border-blue-500">
+        <option value="">All Factions</option>
+        <option value="Prapor">Prapor</option>
+        <option value="Therapist">Therapist</option>
+        <option value="Skier">Skier</option>
+        <option value="Peacekeeper">Peacekeeper</option>
+        <option value="Mechanic">Mechanic</option>
+        <option value="Ragman">Ragman</option>
+        <option value="Jaeger">Jaeger</option>
+      </select>
+      <select id="difficultyFilter" class="p-2 border border-gray-700 rounded-lg bg-gray-800 text-white focus:outline-none focus:border-blue-500">
+        <option value="">All Difficulties</option>
+        <option value="Easy">Easy</option>
+        <option value="Medium">Medium</option>
+        <option value="Hard">Hard</option>
+      </select>
+    </div>
+    <div id="loading" class="text-center text-gray-400 mb-4 hidden">Loading...</div>
+    <div id="results" class="space-y-4"></div>
+    <div id="navigation" class="flex justify-between mt-6">
+      <button id="prevQuest" class="p-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 disabled:bg-gray-600 disabled:cursor-not-allowed">Previous</button>
+      <button id="nextQuest" class="p-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 disabled:bg-gray-600 disabled:cursor-not-allowed">Next</button>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
