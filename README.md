@@ -20,6 +20,9 @@ Tarkov Quest Finder is a Chrome extension that provides instant access to Escape
 - Implements efficient caching system using Chrome Storage API
 - Responsive and accessible design
 
+## Preview
+![tarkovQuestFinder](https://github.com/user-attachments/assets/05a2240d-01a2-41f9-b2e2-72433e6145f6)
+
 ## Installation
 1. Visit the Chrome Web Store (link coming soon)
 2. Click "Add to Chrome"
