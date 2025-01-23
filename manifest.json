@@ -3,9 +3,9 @@
     "name": "Tarkov Quest Finder",
     "version": "1.0",
     "description": "Search for Escape from Tarkov quests and view their details.",
-    "permissions": ["storage", "alarms", "notifications"],
+    "permissions": ["storage"],
     "action": {
-      "default_popup": "popup.html",
+      "default_popup": "questFinder.html",
       "default_icon": {
         "16": "icons/escape-from-tarkov-16.png",
         "48": "icons/escape-from-tarkov-48.png",
@@ -16,8 +16,5 @@
       "16": "icons/escape-from-tarkov-16.png",
       "48": "icons/escape-from-tarkov-48.png",
       "128": "icons/escape-from-tarkov-128.png"
-    },
-    "background": {
-      "service_worker": "background.js"
     }
-  }
+}

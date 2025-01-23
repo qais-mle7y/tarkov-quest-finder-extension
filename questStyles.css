@@ -1,0 +1,270 @@
+/* Add smooth transitions for hover effects */
+.quest-card {
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  }
+  
+  .quest-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Add a fade-in animation for loading */
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  #results {
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  /* Custom scrollbar for results */
+  #results {
+    max-height: 400px;
+    overflow-y: auto;
+  }
+  
+  #results::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  #results::-webkit-scrollbar-track {
+    background: #2d3748;
+  }
+  
+  #results::-webkit-scrollbar-thumb {
+    background: #4a5568;
+    border-radius: 4px;
+  }
+  
+  #results::-webkit-scrollbar-thumb:hover {
+    background: #718096;
+  }
+  
+  /* Improve text visibility */
+  #results .text-gray-600 {
+    color: #cbd5e0; /* Light gray for better contrast */
+  }
+  
+  #results .text-sm {
+    font-size: 0.875rem; /* Slightly larger text */
+  }
+  
+  #results .list-disc {
+    margin-left: 1.5rem; /* Add more space for bullet points */
+  }
+
+  /* Scrollbar Styling */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #1f2937;
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #4b5563;
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #6b7280;
+  }
+
+  /* Loading Spinner */
+  .loading-spinner {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin: 0 auto;
+    border: 3px solid #4b5563;
+    border-radius: 50%;
+    border-top-color: #eab308;
+    animation: spin 1s ease-in-out infinite;
+  }
+
+  @keyframes spin {
+    to { transform: rotate(360deg); }
+  }
+
+  /* Quest Card Styling */
+  .quest-card {
+    background: #1f2937;
+    border: 1px solid #374151;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    transition: all 0.2s ease;
+  }
+
+  .quest-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  }
+
+  /* Task Requirements */
+  .requirements-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+
+  /* Objectives Section */
+  .objectives-section {
+    background: #111827;
+    border-radius: 6px;
+    padding: 1rem;
+    margin: 1rem 0;
+  }
+
+  /* Rewards Section */
+  .rewards-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+    background: #111827;
+    border-radius: 6px;
+    padding: 1rem;
+    margin: 1rem 0;
+  }
+
+  /* Wiki Link */
+  .wiki-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #eab308;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+
+  .wiki-link:hover {
+    color: #d97706;
+  }
+
+  /* Responsive Container */
+  .popup-container {
+    min-width: 375px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  /* Fade Animation */
+  .fade-in {
+    animation: fadeIn 0.3s ease-in-out;
+  }
+
+  /* Suggestions styling */
+  .suggestions {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    max-height: 300px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 50;
+  }
+
+  .suggestion-item {
+    transition: all 0.2s ease;
+  }
+
+  .suggestion-item:hover {
+    background-color: #374151;
+  }
+
+  .suggestion-item.bg-gray-700 {
+    background-color: #374151;
+  }
+
+  /* Highlight matching text */
+  .highlight {
+    background-color: rgba(234, 179, 8, 0.2);
+    color: #eab308;
+    padding: 0.1em 0.2em;
+    border-radius: 0.2em;
+    font-weight: 500;
+  }
+
+  /* Panel Styling */
+  .info-panel {
+    background: #1f2937;
+    border: 1px solid #374151;
+    border-radius: 8px;
+    padding: 1rem;
+  }
+
+  .panel-header {
+    color: #eab308;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #374151;
+  }
+
+  /* Objective Styling */
+  .objective-item {
+    background: #111827;
+    border-radius: 6px;
+    padding: 0.75rem;
+  }
+
+  .objective-number {
+    background: #374151;
+    color: #eab308;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    margin-right: 0.75rem;
+    flex-shrink: 0;
+  }
+
+  /* Hover effects */
+  .info-panel {
+    transition: transform 0.2s ease;
+  }
+
+  .info-panel:hover {
+    transform: translateY(-2px);
+  }
+
+  /* Scrollbar for objectives */
+  .objective-list {
+    max-height: 400px;
+    overflow-y: auto;
+  }
+
+  /* Wiki link styling */
+  .wiki-link {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    background: #374151;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+  }
+
+  .wiki-link:hover {
+    background: #4b5563;
+    transform: translateY(-1px);
+  }
+
+  /* Search container */
+  .search-section {
+    position: relative;
+    z-index: 40;
+  }
+
+  /* Results section */
+  .results-section {
+    position: relative;
+    z-index: 30;
+  }
